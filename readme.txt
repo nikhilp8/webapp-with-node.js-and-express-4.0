@@ -39,3 +39,14 @@ Versioning of packages  // 3 types
 2."~4.13.x"
 3."4.13.3"
 ---- Setting up Express --------------------------------------------------------------------------
+Here we'll checkout about how
+1. express is configured
+2. simple routing
+3. bootstrap template
+4. Bower
+
+1---> pull express in app.js, listen to a port on the machine & run callback function.
+
+To kickoff the server, instead of using node app.js we can use something like node start so that others who are using my app need not worry about the main file. This can be done by adding a script in package.json to replace the above command. Pretty easy :)
+
+
