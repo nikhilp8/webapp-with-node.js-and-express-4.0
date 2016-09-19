@@ -57,3 +57,8 @@ We can replace doing monotonmous tasks like starting server and checking for eve
 1--->Gulp: Task manager for web projects.// installed with npm, code based configuration, package based.
 2--->JSHint: To enforce coding standards, open source.
 JSCS: This is for checking code style implementation, also open source.
+These(gulp,jscs,jshint) have to be setup in our local environment so that everyone coding can follow particular pattern but these are not necessary when in production as it saves some code and time. So has to be setup accordingly.
+Use npm install gulp --save-dev // adds a dev dependencies folder in package.json
+
+3--->code configure gulp so that it does autonomous stuff.
+--- Templating Engines ----------------------------------------------------------------------------
