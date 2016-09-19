@@ -1,22 +1,14 @@
 {
   "name": "library",
   "version": "1.0.0",
-  "description": "This project is a walkthrough to build a webapp with node.js and express 4.0. The major things to be implemented in this are\r 1. node and npm\r 2. setting up gulp\r 3. templating engines\r 4. routing\r 5. databases",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start":"node app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ponugon/webapp-with-node.js-and-express-4.0.git"
-  },
-  "author": "nikhil",
+  "author": "nikhil ponugoti",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ponugon/webapp-with-node.js-and-express-4.0/issues"
-  },
-  "homepage": "https://github.com/ponugon/webapp-with-node.js-and-express-4.0#readme",
+  "description": "trying to figure out what this is!!",
   "dependencies": {
     "express": "^4.14.0"
   }

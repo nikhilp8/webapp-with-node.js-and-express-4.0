@@ -49,4 +49,7 @@ Here we'll checkout about how
 
 To kickoff the server, instead of using node app.js we can use something like node start so that others who are using my app need not worry about the main file. This can be done by adding a script in package.json to replace the above command. Pretty easy :)
 
-
+2---> checkout the documentation of express
+3---> downloaded a bootstrap template which suit my needs from different templates available.
+4---> install bower using npm. Justlike npm/package.json is for backend, bower/bower.json is for frontend. Makes installing different versions of bootstrap,jquery.. easier.
+---- Setting up Gulp -----------------------------------------------------------------------------
