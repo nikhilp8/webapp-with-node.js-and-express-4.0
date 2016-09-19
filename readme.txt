@@ -53,3 +53,7 @@ To kickoff the server, instead of using node app.js we can use something like no
 3---> downloaded a bootstrap template which suit my needs from different templates available.
 4---> install bower using npm. Justlike npm/package.json is for backend, bower/bower.json is for frontend. Makes installing different versions of bootstrap,jquery.. easier.
 ---- Setting up Gulp -----------------------------------------------------------------------------
+We can replace doing monotonmous tasks like starting server and checking for every changes we make, pulling bower packages, setup coding standards like JSHint, inject CSS & JS references into our html file using wiredep & auto restart our application whenever changes are made.
+1--->Gulp: Task manager for web projects.// installed with npm, code based configuration, package based.
+2--->JSHint: To enforce coding standards, open source.
+JSCS: This is for checking code style implementation, also open source.
