@@ -62,3 +62,11 @@ Use npm install gulp --save-dev // adds a dev dependencies folder in package.jso
 
 3--->code configure gulp so that it does autonomous stuff.
 --- Templating Engines ----------------------------------------------------------------------------
+What is a Templating engine ?
+Allows Express to build HTML pages for us, that way we can embed information pulled out from an API or DB into the page. There are couple of them.
+1. Jade // templating engine that has to be compiled
+2. Handlebars   // another type, works a bit differently than Jade
+3. EJS  // another type, depending on the environment we work we can choose among the above, here we'll use this.
+
+1---> Jade, runs through Jade compiler. looks a bit different than plain HTML. It will not have closing tags, and the elements have to be indented properly using 'tab' for the compiler to understand.
+Before setting up any templating engine, we should tell express where we'll store all our views.
