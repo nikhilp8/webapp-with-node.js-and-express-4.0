@@ -70,3 +70,6 @@ Allows Express to build HTML pages for us, that way we can embed information pul
 
 1---> Jade, runs through Jade compiler. looks a bit different than plain HTML. It will not have closing tags, and the elements have to be indented properly using 'tab' for the compiler to understand.
 Before setting up any templating engine, we should tell express where we'll store all our views.
+Jade also operates on JS
+
+2--->Handlebars // minimalist templating engine, writing stuff like Jade can be too much for some. This looks a lot like HTML and if used angular previously then looks lot similar in implementation.
