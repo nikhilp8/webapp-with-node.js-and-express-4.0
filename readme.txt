@@ -74,3 +74,4 @@ Jade also operates on JS
 
 2--->Handlebars // minimalist templating engine, writing stuff like Jade can be too much for some. This looks a lot like HTML and if used angular previously then looks lot similar in implementation.
 --- Routing ---------------------------------------------------------------------------------------
+Instead of using manual get methods for each and every link, we can use router to setup all the routes of particular link in that respective route itself.All we have to do is create the router, define it & tell the app which one's we're going to use.
