@@ -73,3 +73,4 @@ Before setting up any templating engine, we should tell express where we'll stor
 Jade also operates on JS
 
 2--->Handlebars // minimalist templating engine, writing stuff like Jade can be too much for some. This looks a lot like HTML and if used angular previously then looks lot similar in implementation.
+--- Routing ---------------------------------------------------------------------------------------
