@@ -4,7 +4,15 @@ var app = express();
 
 var port = 5000;
 
-var bookRouter = require('./src/routes/bookRoutes');
+var nav = [{
+            Link: '/Books',
+            Text: 'Books'
+        }, {
+            Link: '/Authors',
+            Text: 'Authors'
+        }];
+
+var bookRouter = require('./src/routes/bookRoutes')(nav);
 
 app.use(express.static('public'));
 // app.use(express.static('src/views'));
@@ -23,10 +31,7 @@ app.listen(port, function(err){
 });
 
 
-bookRouter.route('/single')
-    .get(function(req,res){
-        res.send('Hello Single Books')
-});
+
 
 app.use('/Books', bookRouter);
 
