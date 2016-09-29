@@ -13,6 +13,8 @@ var nav = [{
         }];
 
 var bookRouter = require('./src/routes/bookRoutes')(nav);
+var adminRouter = require('./src/routes/adminRoutes')(nav);
+
 
 app.use(express.static('public'));
 // app.use(express.static('src/views'));
@@ -34,6 +36,8 @@ app.listen(port, function(err){
 
 
 app.use('/Books', bookRouter);
+app.use('/Admin', adminRouter);
+
 
 app.get('/', function(req,res){
     res.render('index',{
