@@ -1,8 +1,8 @@
 var express = require('express');
 var bookRouter = express.Router();
 
-
-var books = [
+var router = function(nav) {
+    var books = [
     {
         title:'India After Gandhi',
         genre:'History',
@@ -48,20 +48,29 @@ var books = [
     
 ];
 
-bookRouter.route('/')
+    bookRouter.route('/')
     .get(function(req,res){
-        res.render('books',{
+        res.render('bookListView',{
         title:'hello,I am title',
-        nav: [{
-            Link: '/Books',
-            Text: 'Books'
-        }, {
-            Link: '/Authors',
-            Text: 'Authors'
-        }],
+        nav: nav,
         books: books
     
-    })
-});
+                })
+    });
 
-module.exports = bookRouter;
+    bookRouter.route('/:id')
+    .get(function(req,res){
+        var id = req.params.id;
+        res.render('bookView',{
+        title:'hello,I am title',
+        nav: nav,
+        book: books[id]
+    
+    });
+});
+    
+    return bookRouter;
+};
+
+
+module.exports = router;

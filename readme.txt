@@ -67,8 +67,7 @@ Allows Express to build HTML pages for us, that way we can embed information pul
 1. Jade // templating engine that has to be compiled
 2. Handlebars   // another type, works a bit differently than Jade
 3. EJS  // another type, depending on the environment we work we can choose among the above, here we'll use this.
-
-1---> Jade, runs through Jade compiler. looks a bit different than plain HTML. It will not have closing tags, and the elements have to be indented properly using 'tab' for the compiler to understand.
+ents have to be indented properly using 'tab' for the compiler to understand.
 Before setting up any templating engine, we should tell express where we'll store all our views.
 Jade also operates on JS
 
@@ -76,3 +75,6 @@ Jade also operates on JS
 --- Routing ---------------------------------------------------------------------------------------
 Instead of using manual get methods for each and every link, we can use router to setup all the routes of particular link in that respective route itself.All we have to do is create the router, define it & tell the app which one's we're going to use.
 It can be overwhelming to write down the code for all routes in one file. We can place all the routes in a different file.
+----Data base -------------------------------------------------------------------------------------
+We'll hook up our web application with couple of DB's. We'll use Azure instance of SQL server(for local instances can use SQL express also) and native MongoDB.
+Install mongoDB, start mongod server and then mongod in a different command prompt to view the DB's. It's necessary that we have a data/DB folder in our C; to avoid getting any errors. To populate our DB's and integrate with our Web app lets add Admin routes.
