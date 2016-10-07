@@ -26,9 +26,8 @@ app.use(bodyParser.json());         // checks if there is any body in json and s
 app.use(bodyParser.urlencoded());   // does the same for URL encoded bodies
 app.use(cookieParser());
 app.use(session({secret:'library'}));
-app.use(passport.initialize());
-app.use(passport.session());
 
+require('.src/config/passport')(nav);
 
 
 
