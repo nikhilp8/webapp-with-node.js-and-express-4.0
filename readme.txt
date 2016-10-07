@@ -77,4 +77,8 @@ Instead of using manual get methods for each and every link, we can use router t
 It can be overwhelming to write down the code for all routes in one file. We can place all the routes in a different file.
 ----Data base -------------------------------------------------------------------------------------
 We'll hook up our web application with couple of DB's. We'll use Azure instance of SQL server(for local instances can use SQL express also) and native MongoDB.
-Install mongoDB, start mongod server and then mongod in a different command prompt to view the DB's. It's necessary that we have a data/DB folder in our C; to avoid getting any errors. To populate our DB's and integrate with our Web app lets add Admin routes.
+Install mongoDB, start mongod server and then mongod in a different command prompt to view the DB's. It's necessary that we have a data/DB folder in our C; to avoid getting any errors. To populate our DB's and integrate with our Web app lets add Admin routes
+
+---Authentication ---------------------------------------------------------------------------------
+Have to create users and admin, so that each can log in with username and password with admin having extra privileages. So should handle authentication and authorization. Will be using passport framework for these.
+We use body parser to get data posted in our web page and sets it up as a nice JSON object. It operates as a middle ware. Just like we used app.use() previously

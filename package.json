@@ -1,24 +1,37 @@
 {
   "name": "library",
   "version": "1.0.0",
+  "description": "Library web application",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
-  },
-  "author": "nikhil ponugoti",
-  "license": "ISC",
-  "description": "trying to figure out what this is!!",
   "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.2",
     "express": "^4.14.0",
-    "gulp-jshint": "^2.0.1",
-    "jshint": "^2.9.3"
+    "express-handlebars": "^3.0.0",
+    "jade": "^1.11.0",
+    "mongodb": "^2.2.10",
+    "mssql": "^3.3.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-jscs": "^4.0.0",
     "gulp-jshint": "^2.0.1",
+    "jshint": "^2.9.3",
     "jshint-stylish": "^2.2.1",
-    "nodemon": "^1.10.2"
-  }
+    "nodemon": "^1.10.2",
+    "bower": "^1.7.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ponugon/webapp-with-node.js-and-express-4.0.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ponugon/webapp-with-node.js-and-express-4.0/issues"
+  },
+  "homepage": "https://github.com/ponugon/webapp-with-node.js-and-express-4.0#readme"
 }

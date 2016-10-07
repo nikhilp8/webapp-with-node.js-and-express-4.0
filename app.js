@@ -1,4 +1,5 @@
 var express = require('express');
+var bodyParser = require('body-parser');
 
 var app = express();
 
@@ -14,10 +15,13 @@ var nav = [{
 
 var bookRouter = require('./src/routes/bookRoutes')(nav);
 var adminRouter = require('./src/routes/adminRoutes')(nav);
+var authRouter = require('./src/routes/authRoutes')(nav);
 
 
 app.use(express.static('public'));
-// app.use(express.static('src/views'));
+app.use(bodyParser.json());         // checks if there is any body in json and sets it up to req.body
+app.use(bodyParser.urlencoded());   // does the same for URL encoded bodies
+// app.use(express.static('src/views
 app.set('views','./src/views');               // views are in src/views 
 //app.set('view engine', 'jade');                //view engine is jade
 //app.set('view engine', '.hbs');  
@@ -37,6 +41,7 @@ app.listen(port, function(err){
 
 app.use('/Books', bookRouter);
 app.use('/Admin', adminRouter);
+app.use('/Auth', authRouter);
 
 
 app.get('/', function(req,res){
