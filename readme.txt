@@ -81,4 +81,5 @@ Install mongoDB, start mongod server and then mongod in a different command prom
 
 ---Authentication ---------------------------------------------------------------------------------
 Have to create users and admin, so that each can log in with username and password with admin having extra privileages. So should handle authentication and authorization. Will be using passport framework for these.
-We use body parser to get data posted in our web page and sets it up as a nice JSON object. It operates as a middle ware. Just like we used app.use() previously
+We use body parser to get data posted in our web page and sets it up as a nice JSON object. It operates as a middle ware. Just like we used app.use() previously.
+So to use passport for simple authentication we need to setup passport.initialize, passport.session() [ to place user object into the session & pull it out of the session ], express.session [passport session sits on top of express session]
